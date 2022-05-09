@@ -11,7 +11,7 @@ function newImage(path, left, bottom) {
 function newItem(path, left, bottom){
     let image = newImage(path, left, bottom)
 
-    image.addEventListener ('click', () =>{
+    image.addEventListener ('dblclick', () =>{
         image.remove()
     })
 }
@@ -26,6 +26,7 @@ newImage ('assets/well.png', 500, 425)
 newItem ('assets/sword.png', 500, 405)
 newItem ('assets/sheild.png', 165, 185)
 newItem ('assets/staff.png', 600, 100)
+
 
 /*
 let sword = document.createElement('img')
